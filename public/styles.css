@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.text-color {
+  color: #67d3b2;
+}
+
+.bg-color {
+  background-color: #67d3b2;
+}
+
+
+.hero-section {
+  background-image: url(./images/HeroImage.png);
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover; /* Ensures the image covers the entire section */
+}
+
+.contact-us {
+  font-size: 1.5rem;
+}
+
+footer {
+  font-size: small;
+}
+
+@media (max-width: 430px) {
+
+  .hero-section {
+    height: 100vh;
+  }
+
+  .hero-text {
+    margin-top: -5rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .contact-us {
+      position: relative;
+      top: -10rem;
+      font-size: 1.25rem;
+  }
+
+  .understand-section {
+    margin-top: -11rem;
+  }
+
+  .slide-image {
+    padding: 1px;
+    width: 100%;
+    height: 40vh;
+    overflow: hidden; /* Ensures no overflow outside the container */
+    position: relative;
+  }
+
+  .slide-image > img {
+    width: 100%; /* Ensures the image takes the full width of the container */
+    height: 100%; /* Ensures the image takes the full height of the container */
+    object-fit: cover; /* Scales the image to fill the container while maintaining aspect ratio */
+    object-position: center;
+  }
+
+  .button-text {
+    font-size: 1.25rem;
+  }
+
+  footer {
+    font-size: medium;
+  }
+}
+
+
+@media (max-width: 775px) {
+
+  .hero-section {
+    height: 95vh;
+  }
+
+  .hero-text {
+    margin-top: -5rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .contact-us {
+      position: relative;
+      top: -9rem;
+  }
+
+  .image-group {
+    margin-top: -7rem;
+  }
+
+  .slide-image {
+    padding: 0px 13px 0px 0px;
+    overflow: hidden; /* Ensures no overflow outside the container */
+    position: relative;
+  }
+
+  .slide-image > img {
+    width: 100%; /* Ensures the image takes the full width of the container */
+    height: 100%; /* Ensures the image takes the full height of the container */
+    object-fit: cover; /* Scales the image to fill the container while maintaining aspect ratio */
+    object-position: center;
+  }
+
+  footer {
+    font-size: medium;
+  }
+}
